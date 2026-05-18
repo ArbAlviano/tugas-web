@@ -1,0 +1,174 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+nav {
+    background-color: #61182e;
+    padding: 0px 25px;
+    user-select: none;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: white;
+    border: 2px solid blue;
+}
+
+.navkiri {
+    display: flex;
+    border: 2px solid yellow;
+}
+
+.navkanan {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid black;
+}
+
+a {
+    color: white;
+}
+
+.button {
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: rgb(239, 214, 214);
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 50px 30px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#foto {
+    border-radius: 30px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.lolol{
+    margin-left: 20px;
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column; /* Menyusun h3 dan blockquote dari atas ke bawah *//* Memindahkan h3 dan blockquote ke posisi tengah horizontal */
+    text-align: left;  
+    align-self: center;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.buttonpos {
+    display: flex;
+    gap: 20px;
+    border: 2px solid black;
+}
+
+.buon {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    font-size: medium;
+    border: 1.3px solid black;
+}
+
+.buon:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8pxpx 10px rgba(0,0,0,0.2);
+}
+
+.cardpos {
+    margin-top: 90px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    border: transparent;
+    background-color: #61182e;
+    color: white;
+    text-align: center;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease; 
+}
+
+.cardfoto {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-teks {
+    padding: 10px;
+    text-align: left;
+    white-space: normal;
+    word-break: break-word; 
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 15px; /* Memperkecil jarak luar di layar HP */
+        gap: 15px;
+        justify-content: center; /* Membuat foto dan teks berada di tengah-tengah HP */
+    }
+
+    #foto {
+        /* Inti Perubahan di HP: */
+        width: 80%; /* Foto otomatis mengecil mengikuti 80% lebar layar HP */
+        max-width: 250px; /* Batas maksimal besarnya foto di HP */
+        height: 250px; /* Menyeimbangkan tinggi agar foto tetap berbentuk bulat/kotak rapi */
+    }
+
+    .lolol {
+        margin-left: 0;
+        text-align: center; /* Mengubah teks menjadi rata tengah agar estetik di HP */
+    }
+
+    nav {
+        padding: 0px 10px; /* Dikurangi dari 25px ke 10px agar menghemat ruang samping */
+    }
+
+    .navkanan {
+        gap: 10px; /* Jarak antar-menu (Home, About, itulah) dipersempit menjadi 10px */
+    }
+
+    .buttonpos {
+        justify-content: center;
+}
+
+}
