@@ -20,6 +20,8 @@ nav {
     color: white;
     border: 2px solid blue;
     position: sticky;
+    top: 0;
+    z-index: 1000; /
 }
 
 .navkiri {
@@ -81,7 +83,6 @@ a {
     display: flex;
     gap: 20px;
     border: 2px solid black;
-    cursor: pointer;
 }
 
 .buon {
@@ -94,6 +95,7 @@ a {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
     font-size: medium;
     border: 1.3px solid black;
+    cursor: pointer;
 }
 
 .buon:hover {
