@@ -18,7 +18,6 @@ nav {
     align-items: center;
     height: 40px;
     color: white;
-    border: 2px solid blue;
     position: sticky;
     top: 0;
     z-index: 1000; /
@@ -26,14 +25,12 @@ nav {
 
 .navkiri {
     display: flex;
-    border: 2px solid yellow;
 }
 
 .navkanan {
     display: flex;
     gap: 10px;
     align-items: center;
-    border: 2px solid black;
 }
 
 a {
@@ -82,7 +79,6 @@ a {
 .buttonpos {
     display: flex;
     gap: 20px;
-    border: 2px solid black;
 }
 
 .buon {
