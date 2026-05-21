@@ -6,10 +6,17 @@ daftarTombol.forEach(function(tombol) {
     tombol.addEventListener('click', function() {
         const tulisanTombol = tombol.innerText;
         
-        // Cetak ke console inspect untuk pembuktian
-        console.log('User baru saja mengklik tombol: ' + tulisanTombol);
-        
-        // Tetap munculkan alert agar seru
-        alert('Hebat! Kamu berhasil mengklik tombol ' + tulisanTombol);
+        // Di sini perubahan utamanya, kita pakai IF ELSE
+        if (tulisanTombol === "GIT") {
+            
+            console.log("User memilih GIT");
+            alert("Anda memilih GIT! Waktunya menyimpan kode ke GitHub.");
+            
+        } else if (tulisanTombol === "GUD") {
+            
+            console.log("User memilih GUD");
+            alert("Anda memilih GUD! Git Gud artinya jadilah lebih jago!");
+            
+        }
     });
 });
